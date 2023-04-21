@@ -1,0 +1,69 @@
+.dropdown {
+	background-color: #15294b;
+	color: white;
+	position: relative;
+	overflow: hidden;
+	transition: all 0.3s ease-in-out;
+}
+.line1 {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	height: 8vh;
+	margin-left: 4rem;
+	gap: 2rem;
+	user-select: none;
+}
+.menu {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.5rem;
+	width: 120px;
+	transition: all 0.3s ease-in-out;
+}
+.arrow {
+	transition: all 0.3s ease-in-out;
+	cursor: pointer;
+}
+.code {
+	font-size: 0.95em;
+}
+.course-name {
+	font-weight: 500;
+	font-size: 1.2em;
+}
+.line2 {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+	gap: 0.8rem;
+	margin-left: 4rem;
+}
+.codes {
+	margin-left: 1rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 2rem;
+}
+.line2-heading {
+	font-size: 0.8em;
+	transition: all 0.3s ease-in-out;
+}
+.codes {
+	font-size: 0.95em;
+	transition: all 0.3s ease-in-out;
+}
+.allcodes {
+	padding: 1px 8px;
+	border-radius: 6px;
+}
+.selected {
+	background-color: white;
+	color: black;
+	padding: 1px 8px;
+	border-radius: 6px;
+	transition: all 0.5s ease-in-out;
+}
