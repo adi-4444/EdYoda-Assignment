@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { useLocation, useNavigate } from "react-router-dom";
 import "./App.css";
 import Header from "./components/Header/Header";
 import Dropdown from "./components/Dropdown/Dropdown";
@@ -7,6 +8,13 @@ import Content from "./components/main/Content";
 
 function App() {
 	const [dropDown, setDropdown] = useState(false);
+	const location = useLocation();
+	const navigate = useNavigate();
+	useEffect(() => {
+		if (location.pathname === "/") {
+			navigate("/home");
+		}
+	}, [location]);
 	return (
 		<div className='app'>
 			<Header />

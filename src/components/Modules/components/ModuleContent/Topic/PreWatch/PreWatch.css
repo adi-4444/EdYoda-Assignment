@@ -1,0 +1,22 @@
+.prewatch {
+	padding: 3rem;
+	border-top: 1px solid #0096ff;
+	border-image: linear-gradient(
+			to right,
+			#0096ff 1%,
+			white 48.5%,
+			#0096ff 20%
+		)
+		1;
+}
+.less-list p {
+	font-size: 1.5em;
+	padding-left: 3rem;
+}
+.less-list :nth-child(odd) {
+	background-color: #f1f1f1;
+}
+.less-list p:hover {
+	background-color: #cbc7c7;
+	cursor: pointer;
+}

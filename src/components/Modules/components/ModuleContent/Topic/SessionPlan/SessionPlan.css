@@ -1,0 +1,38 @@
+.session-plan {
+	border-top: 1px solid #0096ff;
+	border-image: linear-gradient(to right, white 1%, #0096ff 100%) 1;
+}
+.session-plan-data {
+	padding: 2rem;
+	padding-left: 4rem;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+.session-plan-data p {
+	margin-bottom: 10px;
+}
+.session-plan-data button {
+	padding: 8px 20px;
+	border-radius: 15px;
+	background: rgb(229, 227, 227);
+	border: none;
+	color: black;
+	margin-bottom: 10px;
+}
+.session-plan-data :nth-child(1) {
+	font-size: 1.5em;
+	font-weight: 500;
+}
+.session-plan-data :nth-child(2) {
+	color: rgb(188, 187, 187);
+}
+.session-plan-data :nth-child(5),
+.session-plan-data :nth-child(6),
+.session-plan-data :nth-child(7) {
+	color: rgb(120, 119, 119);
+}
+.session-plan-data :last-child {
+	margin-top: 1rem;
+}

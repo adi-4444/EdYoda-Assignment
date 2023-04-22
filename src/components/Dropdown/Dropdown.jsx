@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import "./Dropdown.css";
+import { useLocation } from "react-router-dom";
 
 const Dropdown = ({ dropDown, setDropdown }) => {
+	const location = useLocation();
 	const codes = ["ECRD", "FSAR222222", "DS261121", "DS031221"];
 	const [selected, setSelected] = useState(["DS031221", 3]);
 	const onDropChange = () => {
@@ -11,12 +13,21 @@ const Dropdown = ({ dropDown, setDropdown }) => {
 		e.preventDefault();
 		setSelected([code, idx]);
 	};
+
 	return (
 		<div className='dropdown'>
 			<div className='line1'>
 				<span className='menu'>
 					<span className='code'>{selected[0]}</span>
-					<>
+
+					<div
+						style={{
+							visibility:
+								location.pathname === "/home"
+									? "visible"
+									: "hidden",
+						}}
+					>
 						{dropDown ? (
 							<svg
 								xmlns='http://www.w3.org/2000/svg'
@@ -40,7 +51,7 @@ const Dropdown = ({ dropDown, setDropdown }) => {
 								<path fill='white' d='m7 10l5 5l5-5H7z' />
 							</svg>
 						)}
-					</>
+					</div>
 				</span>
 				<span className='course-name'>Data Scientist Program</span>
 			</div>

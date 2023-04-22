@@ -1,0 +1,23 @@
+.session-rec {
+	padding: 3rem;
+	border-top: 1px solid #0096ff;
+	border-image: linear-gradient(to left, #0096ff 1%, white 49.5%, #0096ff 1%)
+		1;
+}
+.recordings {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 3rem;
+}
+.rec {
+	height: 150px;
+	width: 150px;
+	border: 1px solid #ccc;
+	background-image: url("https://wallpaperaccess.com/full/4647858.jpg");
+	object-fit: contain;
+	border-radius: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #e6e3e3;
+}
