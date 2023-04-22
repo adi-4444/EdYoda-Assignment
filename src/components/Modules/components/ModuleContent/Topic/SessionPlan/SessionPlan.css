@@ -20,6 +20,8 @@
 	border: none;
 	color: black;
 	margin-bottom: 10px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
 }
 .session-plan-data :nth-child(1) {
 	font-size: 1.5em;

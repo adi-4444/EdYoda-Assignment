@@ -16,7 +16,9 @@ const Sibebar = () => {
 			<Link
 				to='/modules/topic'
 				className={`sidebar-link ${
-					location.pathname === "/modules/topic" ? "side-active" : ""
+					location.pathname === "/modules/topic/sessionplan"
+						? "side-active"
+						: ""
 				}`}
 			>
 				{" "}

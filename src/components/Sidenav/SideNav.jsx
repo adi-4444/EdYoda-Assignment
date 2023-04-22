@@ -62,7 +62,9 @@ c-144 3 -193 0 -237 -13 -107 -31 -190 -106 -228 -205 -16 -43 -19 -78 -19
 			<Link
 				to='/modules'
 				className={` link ${
-					location.pathname === "/modules" ? "active" : ""
+					location.pathname === "/modules/topic/sessionplan"
+						? "active"
+						: ""
 				}`}
 			>
 				<svg
