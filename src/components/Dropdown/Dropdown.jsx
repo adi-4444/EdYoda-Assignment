@@ -12,7 +12,7 @@ const Dropdown = ({ dropDown, setDropdown }) => {
 		setSelected([code, idx]);
 	};
 	return (
-		<div className='dropdown' style={{ height: dropDown ? "18vh" : "8vh" }}>
+		<div className='dropdown'>
 			<div className='line1'>
 				<span className='menu'>
 					<span className='code'>{selected[0]}</span>
@@ -45,11 +45,17 @@ const Dropdown = ({ dropDown, setDropdown }) => {
 				<span className='course-name'>Data Scientist Program</span>
 			</div>
 
-			<div className='line2'>
-				<p className='line2-heading'>Select Program</p>
+			<div className={`line2 ${dropDown ? "line2hide" : ""}`}>
+				<p
+					className='line2-heading'
+					style={{ display: dropDown ? "block" : "none" }}
+				>
+					Select Program
+				</p>
 				<div className='codes'>
 					{codes.map((item, idx) => (
 						<span
+							style={{ display: dropDown ? "block" : "none" }}
 							key={idx}
 							onClick={(e) => codeChangeHandler(e, item, idx)}
 							className={`allcodes ${
