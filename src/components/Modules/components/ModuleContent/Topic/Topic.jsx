@@ -120,10 +120,10 @@ const Topic = () => {
 											y2='7.90313'
 											gradientUnits='userSpaceOnUse'
 										>
-											<stop stop-color='#0096FF' />
+											<stop stopColor='#0096FF' />
 											<stop
 												offset='1'
-												stop-color='#0048FF'
+												stopColor='#0048FF'
 											/>
 										</linearGradient>
 									</defs>
@@ -183,10 +183,10 @@ const Topic = () => {
 											y2='8.24063'
 											gradientUnits='userSpaceOnUse'
 										>
-											<stop stop-color='#0096FF' />
+											<stop stopColor='#0096FF' />
 											<stop
 												offset='1'
-												stop-color='#0048FF'
+												stopColor='#0048FF'
 											/>
 										</linearGradient>
 									</defs>

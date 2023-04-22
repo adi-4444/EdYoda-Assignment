@@ -5,10 +5,10 @@ import ModuleContent from "./components/ModuleContent/ModuleContent";
 import { useLocation, useNavigate } from "react-router-dom";
 
 const Modules = () => {
-	const location = useLocation();
+	const { pathname } = useLocation();
 	const navigate = useNavigate();
 	useEffect(() => {
-		if (location.pathname === "/modules") {
+		if (pathname === "/modules" || pathname === "/modules/") {
 			navigate("/modules/topic");
 		}
 	}, [location]);

@@ -5,3 +5,16 @@
 .main {
 	display: flex;
 }
+.messagebox {
+	position: fixed;
+	background-color: #0048ff;
+	bottom: 1rem;
+	right: 1rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 1rem;
+	border-radius: 50%;
+	cursor: pointer;
+	box-shadow: 13px 15px 26px -3px rgba(0, 0, 0, 0.1);
+}

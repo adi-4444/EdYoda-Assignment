@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./Dropdown.css";
 import { useLocation } from "react-router-dom";
 
@@ -6,6 +6,7 @@ const Dropdown = ({ dropDown, setDropdown }) => {
 	const location = useLocation();
 	const codes = ["ECRD", "FSAR222222", "DS261121", "DS031221"];
 	const [selected, setSelected] = useState(["DS031221", 3]);
+	const dropdownRef = useRef(null);
 	const onDropChange = () => {
 		setDropdown(!dropDown);
 	};
@@ -13,6 +14,23 @@ const Dropdown = ({ dropDown, setDropdown }) => {
 		e.preventDefault();
 		setSelected([code, idx]);
 	};
+	useEffect(() => {
+		const handleClickOutside = (event) => {
+			const dropdownDiv = document.querySelector(".dropdown");
+			const dropArrow = document.querySelector(".arrow");
+			if (
+				dropdownDiv &&
+				!dropdownDiv.contains(event.target) &&
+				!dropArrow.contains(event.target)
+			) {
+				setDropdown(false);
+			}
+		};
+		document.addEventListener("mousedown", handleClickOutside);
+		return () => {
+			document.removeEventListener("mousedown", handleClickOutside);
+		};
+	}, [dropDown]);
 
 	return (
 		<div className='dropdown'>
@@ -21,6 +39,8 @@ const Dropdown = ({ dropDown, setDropdown }) => {
 					<span className='code'>{selected[0]}</span>
 
 					<div
+						className='dropdowndiv'
+						ref={dropdownRef}
 						style={{
 							visibility:
 								location.pathname === "/home"

@@ -1,0 +1,79 @@
+.assignment {
+	padding: 4rem;
+}
+.assignment-data {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+.assignment-data > :nth-child(1) {
+	font-size: 1.6em;
+	font-weight: 500;
+	margin-bottom: 7px;
+}
+.assignment-data > :nth-child(2) {
+	color: rgb(179, 178, 178);
+	margin-bottom: 2rem;
+}
+.assignment-data > :nth-child(3) {
+	font-size: 1.2em;
+	margin-bottom: 1rem;
+}
+.assignment-details {
+	width: 100%;
+	height: 150px;
+	background-color: #fff;
+	border-radius: 5px;
+	border: 1px solid #0096ff;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	box-shadow: 13px 15px 18px -3px rgba(0, 0, 0, 0.1);
+}
+.assignment-details > :nth-child(1),
+.assignment-details > :nth-child(2),
+.assignment-details > :nth-child(3),
+.assignment-details > :nth-child(4),
+.assignment-details > :nth-child(5) {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.qestions :nth-child(1),
+.duration :nth-child(1),
+.score :nth-child(1) {
+	color: grey;
+	font-size: 1.5em;
+}
+
+.qestions :nth-child(2),
+.duration :nth-child(2),
+.score :nth-child(2) {
+	color: grey;
+	font-size: 0.7em;
+}
+.score {
+	border-right: 1px solid rgb(149, 148, 148);
+	padding-right: 5rem;
+}
+.assignment-details2 {
+	font-size: 0.9em;
+}
+.assignment-details2 > :nth-child(1) {
+	align-self: flex-start;
+	margin-bottom: 1rem;
+}
+.assignment-details2 > :nth-child(2),
+.assignment-details2 > :nth-child(3) {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-start;
+	width: 180px;
+	margin-bottom: 1rem;
+}
+.assignment-details2 > :nth-child(2) > :nth-child(2),
+.assignment-details2 > :nth-child(3) > :nth-child(2) {
+	margin-left: 1rem;
+	color: grey;
+}

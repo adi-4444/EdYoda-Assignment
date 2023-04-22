@@ -1,0 +1,38 @@
+.instructors {
+	padding: 2rem 4rem;
+}
+.instructors-heading {
+	font-size: 2em;
+	font-weight: 500;
+	margin-bottom: 1rem;
+}
+.instructors-data {
+	background-color: #fff;
+	height: 500px;
+	border: 1px solid #0096ff;
+	border-radius: 10px;
+	box-shadow: 13px 15px 26px -3px rgba(0, 0, 0, 0.1);
+	padding: 1rem;
+	overflow: auto;
+	display: flex;
+	gap: 6rem;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.a-user {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 1rem;
+	transition: all 0.3s ease-in-out;
+	padding: 1rem;
+}
+.a-user:hover {
+	cursor: pointer;
+	box-shadow: 13px 15px 26px -3px rgba(0, 0, 0, 0.1);
+}
+.a-user > img {
+	height: 200px;
+}

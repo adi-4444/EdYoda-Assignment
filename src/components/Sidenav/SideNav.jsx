@@ -3,14 +3,15 @@ import "./SideNav.css";
 import { Link, useLocation } from "react-router-dom";
 
 const SideNav = () => {
-	const location = useLocation();
-
+	const { pathname } = useLocation();
 	return (
 		<div className='sidenav'>
 			<Link
 				to='/home'
 				className={` link ${
-					location.pathname === "/home" ? "active" : ""
+					pathname === "/home" || pathname === "/home/"
+						? "active"
+						: ""
 				}`}
 			>
 				<svg
@@ -62,7 +63,13 @@ c-144 3 -193 0 -237 -13 -107 -31 -190 -106 -228 -205 -16 -43 -19 -78 -19
 			<Link
 				to='/modules'
 				className={` link ${
-					location.pathname === "/modules/topic/sessionplan"
+					pathname === "/modules/topic" ||
+					pathname === "/modules/quiz" ||
+					pathname === "/modules/assignment" ||
+					pathname === "/modules/topic/sessionplan" ||
+					pathname === "/modules/topic/prewatchvideos" ||
+					pathname === "/modules/topic/sessionrecordings" ||
+					pathname === "/modules/topic/references"
 						? "active"
 						: ""
 				}`}

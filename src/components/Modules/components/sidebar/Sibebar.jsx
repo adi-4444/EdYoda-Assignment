@@ -9,14 +9,17 @@ import A from "../../../../assets/Icons/assignment.svg";
 import AA from "../../../../assets/Icons/activeAssignment.svg";
 
 const Sibebar = () => {
-	const location = useLocation();
+	const { pathname } = useLocation();
 
 	return (
 		<div className='sidebar'>
 			<Link
 				to='/modules/topic'
 				className={`sidebar-link ${
-					location.pathname === "/modules/topic/sessionplan"
+					pathname === "/modules/topic/sessionplan" ||
+					pathname === "/modules/topic/prewatchvideos" ||
+					pathname === "/modules/topic/sessionrecordings" ||
+					pathname === "/modules/topic/references"
 						? "side-active"
 						: ""
 				}`}

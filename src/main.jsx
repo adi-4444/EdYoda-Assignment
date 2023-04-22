@@ -13,11 +13,13 @@ import SessionPlan from "./components/Modules/components/ModuleContent/Topic/Ses
 import PreWatch from "./components/Modules/components/ModuleContent/Topic/PreWatch/PreWatch.jsx";
 import SessionRec from "./components/Modules/components/ModuleContent/Topic/SessionRec/SessionRec.jsx";
 import References from "./components/Modules/components/ModuleContent/Topic/References/References.jsx";
+import ErrorPage from "./components/ErrorPage/ErrorPage.jsx";
 
 const router = createBrowserRouter([
 	{
 		path: "/",
 		element: <App />,
+		errorElement: <ErrorPage />,
 		children: [
 			{
 				path: "home",
